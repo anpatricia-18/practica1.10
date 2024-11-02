@@ -1,0 +1,149 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+header, nav, main, article, footer {
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Capçalera */
+header {
+    background-color: #1ad930;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo {
+    width: 60px;
+    height: auto;
+}
+
+.rotate-text {
+    transform: rotate(-10deg);
+    font-family: 'Roboto', sans-serif; /* Exemple de font de Google */
+}
+
+/* Estil del menú lateral */
+.menu-lateral {
+    width: 20%; /* Amplada del menú en relació a la pàgina */
+    background-color: #cf8785; /* Color de fons per al menú */
+    padding: 10px;
+}
+
+/* Estil per a la llista no ordenada i els elements de la llista */
+.menu-lateral ul {
+    list-style-type: none; /* Treu els punts de la llista */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral li {
+    margin-bottom: 10px; /* Separació entre elements del menú */
+}
+
+/* Estil per als enllaços del menú */
+.menu-lateral a {
+    display: block;
+    padding: 10px;
+    color: white; /* Color del text */
+    text-decoration: none; /* Treu el subratllat */
+    background-color: #31dfae; /* Color de fons per als enllaços */
+    border-radius: 5px; /* Arrodoneix les cantonades */
+    text-align: center;
+}
+
+/* Canvi de color en passar el ratolí */
+.menu-lateral a:hover {
+    background-color: #ac2925; /* Color de fons en passar el ratolí */
+}
+
+/* Contingut principal */
+main {
+    background-color: #c2d422;
+    width: 50%;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+/* Banner lateral dret */
+.banner {
+    width: 20%; /* Amplada del banner en relació a la pàgina */
+    height: 100%; /* Ocupa tota l'alçada disponible */
+    background-image: url("https://e7.pngegg.com/pngimages/857/82/png-clipart-vedanta-floral-design-kolkata-vedas-school-vertical-lines-india-flower.png"); /* Ruta de la imatge de fons */
+    background-size: cover; /* Fa que la imatge ocupi tot el banner */
+    background-position: center; /* Centra la imatge al banner */
+    border-radius: 10px; /* Arrodoneix les cantonades */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: chocolate;
+}
+
+/* Estil del text dins del banner */
+.banner p {
+    color: #1d1a1a; /* Color de text per contrastar amb la imatge de fons */
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+
+/* Peu de pàgina */
+footer {
+    clear: both;
+    padding: 10px;
+    width: 100%;
+    background-color: #2972d1;
+    color: #d21a1a;
+    text-align: center;
+}
+
+footer .enllaços ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+footer .imatges img {
+    width: 50px;
+    margin-left: -10px;
+}
+
+/* Estil per a la caixa de les fotos */
+.caixa-fotos {
+    position: relative;
+    width: 150px; /* Amplada de la caixa */
+    height: 150px; /* Alçada de la caixa */
+    margin: 0 auto; /* Centra la caixa */
+}
+
+/* Estil per a les fotos superposades */
+.foto-superposada {
+    position: absolute;
+    width: 100px; /* Amplada de les imatges */
+    height: auto; /* Manté la proporció de l'imatge */
+    border-radius: 10px; /* Arrodoneix les cantonades */
+    box-shadow: 0 2px 4px rgba(26, 7, 7, 0.3); /* Afegeix una ombra a cada imatge */
+}
+
+footer .info {
+    flex: 1;
+}
